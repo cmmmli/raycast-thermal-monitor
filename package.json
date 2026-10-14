@@ -4,7 +4,7 @@
   "title": "Thermal Monitor",
   "description": "Show macOS thermal state in the menu bar and notify when it gets worse",
   "icon": "extension-icon.png",
-  "author": "komori",
+  "author": "cmmmli",
   "categories": [
     "System"
   ],
