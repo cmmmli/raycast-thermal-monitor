@@ -12,9 +12,13 @@ macOS の熱状態(`NSProcessInfo.thermalState`)をメニューバーに表示�
 ## セットアップ
 
 ```sh
+git clone https://github.com/cmmmli/raycast-thermal-monitor.git
+cd raycast-thermal-monitor
 npm install
 npm run build
 ```
+
+`npm run build` がビルド結果を Raycast の拡張機能フォルダ(`~/.config/raycast/extensions/thermal-monitor/`)にコピーする。Raycast はそのコピーを実行するので、clone する場所はどこでもよく、ビルド後に移動・削除しても動き続ける。
 
 Raycast で「Thermal State」を一度実行すると、メニューバーに表示される。以降は Raycast が起動していれば、Mac を再起動しても自動で表示される(Raycast の「Launch Raycast at Login」がオンであること)。
 
@@ -64,7 +68,3 @@ Raycast で「Thermal State」を一度実行すると、メニューバーに�
 | 「Thermal State が無効です」と出る | Raycast の設定 → Extensions →「Thermal State」にチェックを入れ、一度実行する |
 | 通知が来ない | システム設定 →「通知」→「スクリプトエディタ」を許可する(通知は `osascript` から送っているため) |
 | メニューバーが混んでいて見えない | ノッチの裏に隠れている可能性がある。Ice などのメニューバー整理ツールで表示側に固定する |
-
-## 注意
-
-このフォルダは移動・削除しないこと。Raycast は開発中の拡張機能としてこのフォルダを参照している。
