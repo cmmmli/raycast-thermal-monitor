@@ -1,0 +1,41 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "thermal-monitor",
+  "title": "Thermal Monitor",
+  "description": "Show macOS thermal state in the menu bar and notify when it gets worse",
+  "icon": "extension-icon.png",
+  "author": "komori",
+  "categories": [
+    "System"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "thermal",
+      "title": "Thermal State",
+      "description": "Show thermal state in the menu bar",
+      "mode": "menu-bar",
+      "interval": "30s"
+    },
+    {
+      "name": "toggle",
+      "title": "Toggle Thermal Monitor",
+      "description": "Show or hide the thermal state in the menu bar",
+      "mode": "no-view"
+    }
+  ],
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "lint": "ray lint"
+  },
+  "dependencies": {
+    "@raycast/api": "^2.8.0",
+    "@raycast/utils": "^2.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}
